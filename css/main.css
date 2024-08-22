@@ -55,6 +55,7 @@ img{display: block;}
 }
 /* header */
 header{
+    border-bottom: 1px solid #ccc;
     width: 100%;
 }
 header .inner{
@@ -250,6 +251,7 @@ main ul li img{
 /* footer */
 footer{
     width: 100%;
+    background: #ccc;
 }
 footer .inner{
     width: 1200px;
@@ -257,7 +259,6 @@ footer .inner{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background: #ccc;
 }
 footer h1{
     width: 200px;
