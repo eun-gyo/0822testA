@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{
-    font-family: "맑은 고딕","malgun gothic", sans-serif;
+
 }
 *{margin: 0;padding: 0;box-sizing: border-box;}
 li{list-style: none;}
@@ -55,8 +55,8 @@ img{display: block;}
 }
 /* header */
 header{
-    border-bottom: 1px solid #ccc;
     width: 100%;
+    border-top: 3px solid #412f22;
 }
 header .inner{
     width: 1200px;
@@ -143,6 +143,10 @@ main ul li{
     width: 1200px;
     height: 300px;
 }
+main ul li a{
+    display: block;
+    width: 100%;
+}
 main ul li img{
     width: 100%;
 }
@@ -171,10 +175,15 @@ main ul li img{
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+.notgal .tab li a{
     font-size: 16px;
+    color: #333;
 }
 .notgal .tab li.on{
     background: #412f22;
+}
+.notgal .tab li.on a{
     color: #fff;
 }
 /* box1 공지사항 */
@@ -186,15 +195,17 @@ main ul li img{
     position: relative;
     padding: 5px 0;
 }
+.box .notice li a{
+    color: #333;
+}
 .box .notice li span{
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
-.box .notice li:hover{
+.box .notice li:hover a{
     text-decoration: underline;
-    cursor: pointer;
 }
 /* box2 갤러리 */
 .box2{
@@ -247,6 +258,12 @@ main ul li img{
 .banner:hover,
 .goto:hover{
     background: #412f22;
+}
+.banner a,
+.goto a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 /* footer */
 footer{
